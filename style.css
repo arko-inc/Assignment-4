@@ -1,0 +1,140 @@
+
+#mobile-menu.menu-hidden {
+    transform: translateX(100%);
+}
+
+#mobile-menu.menu-visible {
+    transform: translateX(0);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+.first-bg{
+    background-image: url(images/firstbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+    height: 100vh;
+}
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Button styling */
+.beat {
+    animation: beat 1s infinite;
+}
+ /* Custom Animation for the cards */
+ @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fcard .card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Hover Effects for Links */
+a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #f87171; /* Tailwind's red-400 */
+    transform: translateY(-2px);
+}
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkred;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: red transparent;
+}
+
+body {
+    height: 200vh;
+    background: #f9f9f9;
+}
+.divider{
+    height: 400px;
+}
+section{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.text{
+    font-size: 160px;
+}
+.bg-slate-500{
+    background-color: #1c1b1b;
+    color: #c9c9c9;
+
+}
+.fcard{
+    background-image: url(images/Frame\ 9.png);
+    background-repeat: no-repeat;
+}
